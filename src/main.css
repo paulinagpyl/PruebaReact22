@@ -1,0 +1,97 @@
+/*@import "bootstrap/dist/css/bootstrap.min.css";*/
+
+.activo {
+  color: white;
+  text-decoration: none;
+  padding-left: 15px;
+  font-weight: bold;
+}
+
+.noActivo {
+  color: white;
+  text-decoration: none;
+  padding-left: 15px;
+}
+
+body {
+  margin: 0;
+}
+
+.App {
+  font-family: "Maitree", serif;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+/* Navbar */
+
+.navbar {
+  background: #34586b;
+  padding: 5px;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* gallery */
+.gallery {
+  display: grid;
+  gap: 10px;
+  row-gap: 40px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/*.grid-columns-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .grid-columns-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  */
+.gallery .photo {
+  cursor: pointer;
+  padding: 10px 10px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: left;
+  text-shadow: 0px 0px 15px black;
+}
+
+.gallery .photo:hover {
+  box-shadow: 0px 0px 2px 1px black;
+}
+
+.gallery .photo svg {
+  align-self: flex-end;
+}
+
+.p-3 {
+  padding: 30px;
+}
+
+/* duración de la transición*/
+.card {
+  transition: all 0.3s;
+  border: 1px solid #ddd;
+  border-radius: 3%;
+}
+
+/* aumenta de tamaño la imagen*/
+.card:hover {
+  transform: scale(1.08);
+}
+.pizzaIni {
+  width: 100%; /* Ancho del contenedor */
+  height: 100px; /* Altura del contenedor */
+  background-image: url("https://s1.eestatic.com/2020/11/03/ciencia/nutricion/seguridad_alimentaria-pizza-nutricion_533208863_164247374_1706x960.jpg"); /* URL de la imagen */
+  background-position: center; /* La imagen se centra dentro del contenedor */
+}
